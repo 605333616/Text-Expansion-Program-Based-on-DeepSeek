@@ -35,7 +35,7 @@ def select_file(i=0):
         response: ChatResponse = chat(model=modelVersion, messages=[
             {
                 'role': 'system',
-                'content': '只填充细节，不扩充情节,要有画面感，尽量简洁：',
+                'content': '只填充细节，不扩充情节,要有画面感，尽量简洁,限制在一个自然段以内：',
             },
             {
                 "role": "user",
